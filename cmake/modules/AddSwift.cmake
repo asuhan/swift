@@ -363,6 +363,8 @@ function(_add_variant_c_compile_flags)
    endif()
   endif()
 
+  list(APPEND result "-fno-rtti" "-fno-exceptions")
+
   set("${CFLAGS_RESULT_VAR_NAME}" "${result}" PARENT_SCOPE)
 endfunction()
 
