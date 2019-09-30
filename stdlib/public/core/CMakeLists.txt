@@ -288,6 +288,7 @@ endif()
 
 list(APPEND swift_stdlib_compile_flags "-Xfrontend" "-function-sections")
 list(APPEND swift_stdlib_compile_flags "-Xfrontend" "-data-sections")
+list(APPEND swift_stdlib_compile_flags "-Xfrontend" "-metadata-sections")
 list(APPEND swift_stdlib_compile_flags "-Xfrontend" "-disable-reflection-metadata")
 list(APPEND swift_stdlib_compile_flags "-Osize")
 
